@@ -23,6 +23,7 @@ exports.productDetailFetch = async (req, res, next) => {
   console.log("product", req.product.id);
   res.status(200).json(req.product);
 };
+
 exports.productUpdate = async (req, res, next) => {
   try {
     if (req.file) {
